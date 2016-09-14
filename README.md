@@ -1,4 +1,4 @@
-# a-greed
+# a-grid
 ***Custom grid system created by Alexanders***
 - - -
 #### .a-container
