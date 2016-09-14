@@ -11,8 +11,6 @@ var gulp = require('gulp'),
     cssmin = require('gulp-minify-css'),
     browserify = require('gulp-browserify'),
     stringify = require('stringify'),
-    imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
     concat = require('gulp-concat');
 
 var path = {
