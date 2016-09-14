@@ -1,7 +1,7 @@
 /**
  * Created by alexanderbondarenko on 9/14/16.
  */
-var gulp = require('gulp'),
+const gulp = require('gulp'),
     del = require('del'),
     watch = require('gulp-watch'),
     prefixer = require('gulp-autoprefixer'),
@@ -144,4 +144,4 @@ gulp.task('build:prod',
 );
 
 
-gulp.task('prod', 'build:prod');
+gulp.task('prod', gulp.series('build:prod'));
