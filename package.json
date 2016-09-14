@@ -19,7 +19,7 @@
   "dependencies": {
     "live-server": "^1.1.0",
     "gulp": "^4.0.0-alpha.2",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.0",
     "gulp-less": "^3.1.0",
