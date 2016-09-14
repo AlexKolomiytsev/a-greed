@@ -7,40 +7,65 @@
     <style>
         .demo-box {
             width: 33%;
-            float: left;
+            /*float: left;*/
             border: 1px solid black;
+        }
+
+        .fixed {
+            position: fixed;
+            left: 0;
+        }
+
+        .fixed.top{
+            top: 0;
+        }
+
+        .fixed.bottom{
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-<div class="a-container-fluid">
-    <div class="a-row">
+<header class="fixed top f-header">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Accusamus consectetur deleniti eaque error iure
+    libero molestias, nemo nulla obcaecati optio porro quibusdam, quo reiciendis temporibus tenetur totam ut veritatis voluptatibus.
+</header>
+<div class="padding-setter" data-top=".f-header" data-bottom=".f-footer">
+    <div class="a-container-fluid">
+        <div class="a-row">
 
+        </div>
+    </div>
+    <div class="a-equal-parent" data-minWidth="800">
+        <div class="demo-box a-equal-h a-va-box">
+            <div class="a-va -mid">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aperiam architecto aut deleniti dicta dolor est eum
+                exercitationem iste laborum nam necessitatibus neque
+                nihil non nulla odit, tenetur totam veritatis voluptas.
+            </div>
+        </div>
+        <div class="demo-box a-equal-h a-va-box">
+            <div class="a-va -mid">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Blanditiis.
+            </div>
+        </div>
+        <div class="demo-box a-equal-h a-va-box">
+            <div class="a-va -mid">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid consectetur consequatur distinctio,
+                ducimus eaque error.
+            </div>
+        </div>
     </div>
 </div>
-<div class="a-equal-parent" data-minWidth="800">
-    <div class="demo-box a-equal-h a-va-box">
-        <div class="a-va -mid">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aperiam architecto aut deleniti dicta dolor est eum
-            exercitationem iste laborum nam necessitatibus neque
-            nihil non nulla odit, tenetur totam veritatis voluptas.
-        </div>
-    </div>
-    <div class="demo-box a-equal-h a-va-box">
-        <div class="a-va -mid">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Blanditiis.
-        </div>
-    </div>
-    <div class="demo-box a-equal-h a-va-box">
-        <div class="a-va -mid">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aliquid consectetur consequatur distinctio,
-            ducimus eaque error.
-        </div>
-    </div>
-</div>
+<footer class="fixed bottom f-footer">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Accusamus consectetur deleniti eaque error iure
+    libero molestias, nemo nulla obcaecati optio porro quibusdam, quo reiciendis temporibus tenetur totam ut veritatis voluptatibus.
+</footer>
 <script src="js/main.js"></script>
 </body>
 </html>

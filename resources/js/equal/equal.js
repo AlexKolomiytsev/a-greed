@@ -6,8 +6,7 @@ function Equal() {
 }
 
 Equal.prototype.calculate = function () {
-    var self = this,
-        parents = $('.a-equal-parent'),
+    var parents = $('.a-equal-parent'),
         width = $(window).outerWidth(),
         children, height, childH, maxWidth, minWidth;
 
