@@ -19,6 +19,10 @@ row for your cols
 * des --- >= 1024px;
 * ldes --- >= 1200px;
 
+###Equal
 
+.a-equal-h -- elements that will have the same height
 
+.a-equal-parent -- parent element of .a-equal-h
 
+.a-equal-parent data-min/maxWidth -- make calculations by upper/lower display size
