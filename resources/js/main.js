@@ -7,3 +7,4 @@ window.$ = jQuery;
 
 require('./equal/equal').init();
 require('./padding-setter/padding-setter').init();
+require('./abs-center').init();
