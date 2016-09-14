@@ -8,6 +8,7 @@
         .demo-box {
             width: 33%;
             /*float: left;*/
+        .bordered {
             border: 1px solid black;
         }
 
@@ -23,6 +24,11 @@
         .fixed.bottom{
             bottom: 0;
         }
+        .full-width {
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
@@ -34,7 +40,49 @@
 <div class="padding-setter" data-top=".f-header" data-bottom=".f-footer">
     <div class="a-container-fluid">
         <div class="a-row">
-
+            <div class="a-col-mob-12 a-col-tab-6 a-col-des-4 a-col-ldes-4">
+                <div class="bordered full-width">
+                    <div class="a-abs-center">
+                        COLUMN
+                    </div>
+                </div>
+            </div>
+            <div class="a-col-mob-12 a-col-tab-6 a-col-des-4 a-col-ldes-4">
+                <div class="bordered full-width">
+                    <div class="a-abs-center">
+                        COLUMN
+                    </div>
+                </div>
+            </div>
+            <div class="a-col-mob-12 a-col-tab-12 a-col-des-4 a-col-ldes-4">
+                <div class="bordered full-width">
+                    <div class="a-abs-center">
+                        COLUMN
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="a-row">
+            <div class="a-col-mob-12 a-col-tab-6 a-col-des-4 a-col-ldes-4">
+                <div class="bordered full-width">
+                    <div class="a-abs-center">
+                        COLUMN
+                    </div>
+                </div>
+            </div>
+            <div class="a-col-mob-12 a-col-tab-6 a-col-des-4 a-col-ldes-4">
+                <div class="bordered full-width">
+                    <div class="a-abs-center">
+                        COLUMN
+                    </div>
+                </div></div>
+            <div class="a-col-mob-12 a-col-tab-12 a-col-des-4 a-col-ldes-4">
+                <div class="bordered full-width a-abs-center-parent">
+                    <div class="a-abs-center">
+                        COLUMN
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="a-equal-parent" data-minWidth="800">

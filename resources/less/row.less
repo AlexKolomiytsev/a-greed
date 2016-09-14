@@ -1,4 +1,14 @@
 .a-row {
+  display: block;
   width: 100%;
   height: auto;
+  position: relative;
+}
+.a-row:before,
+.a-row:after {
+  display: table;
+  content: " ";
+}
+.a-row:after {
+  clear: both;
 }
