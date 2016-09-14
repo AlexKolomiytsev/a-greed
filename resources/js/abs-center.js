@@ -5,7 +5,7 @@ function AbsCenter() {
     this.parent = $('.a-abs-center-parent');
 }
 
-AbsCenter.prototype.init = function () {
+AbsCenter.prototype.calculate = function () {
     var self = this;
 
     self.parent.each(function (index) {
@@ -22,6 +22,22 @@ AbsCenter.prototype.init = function () {
 
         $(this).height(height + 50);
     });
+};
+
+AbsCenter.prototype.events = function () {
+    var self = this;
+
+    $(window).resize(function () {
+        self.calculate();
+    });
+
+    $(document).ready(function () {
+        self.calculate();
+    })
+};
+
+AbsCenter.prototype.init = function () {
+    this.events();
 };
 
 module.exports = new AbsCenter();
