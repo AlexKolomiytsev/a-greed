@@ -29,14 +29,14 @@ var path = {
         }
     },
     src: {
-        style: 'resources/assets/less/main.less',
-        js: 'resources/assets/js/main.js',
-        html: 'resources/assets/*.html'
+        style: 'resources/less/main.less',
+        js: 'resources/js/main.js',
+        html: 'resources*.html'
     },
     watch: {
-        style: 'resources/assets/less/**/*',
-        js: 'resources/assets/js/**/*',
-        html: 'resources/assets/*.html'
+        style: 'resources/less/**/*',
+        js: 'resources/js/**/*',
+        html: 'resources/*.html'
     },
     clean: {
         dev: {
