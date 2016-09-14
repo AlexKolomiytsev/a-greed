@@ -1,0 +1,19 @@
+{
+  "name": "a-greed",
+  "version": "1.0.0",
+  "description": "custom greed system created by Alexanders",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexKolomiytsev/a-greed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexKolomiytsev/a-greed/issues"
+  },
+  "homepage": "https://github.com/AlexKolomiytsev/a-greed#readme"
+}
