@@ -29,7 +29,7 @@ var path = {
     src: {
         style: 'resources/less/main.less',
         js: 'resources/js/main.js',
-        html: 'resources*.html'
+        html: 'resources/*.html'
     },
     watch: {
         style: 'resources/less/**/*',
@@ -56,7 +56,7 @@ var path = {
 gulp.task('less:dev', function () {
     return gulp.src(path.src.style)
         .pipe(less({}))
-        .pipe(autoprefixer())
+        .pipe(prefixer())
         .pipe(sourcemaps.init())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.dev.style));
@@ -108,7 +108,7 @@ gulp.task('dev', gulp.series('build:dev', 'watch'));
 gulp.task('less:prod', function () {
     return gulp.src(path.src.style)
         .pipe(less({}))
-        .pipe(autoprefixer())
+        .pipe(prefixer())
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(path.build.prod.style));
